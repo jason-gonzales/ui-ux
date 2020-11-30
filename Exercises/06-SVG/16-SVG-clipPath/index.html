@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/myHeart.png">
+    <link rel="stylesheet" href="style.css">
+    <title>SVG Clip Path</title>
+    <style>
+        svg {
+            width: 500px;
+            height: 500px;
+        }
+
+        svg rect {
+            width: 346px;
+            height: 346px;
+            fill: #C6575F;
+        }
+
+        svg circle {
+            fill: #49596f;
+            transform: translateX(180px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg>
+        <rect x="71" y="81"/>
+        <clipPath id="myClip">
+            <rect x="71" y="81"/>
+        </clipPath>
+        <g clip-path="url(#myClip)">
+            <circle cx="244" cy="254" r="173"/>
+        </g>
+    </svg>
+
+</body>
+
+</html>

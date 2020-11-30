@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/myHeart.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            background: url('img/circle-pattern.svg') repeat center/ 50px;
+        }
+
+        /* Mobile Width */
+        @media (max-width: 576px) {
+            section {
+                background: url('img/circle-pattern.svg') no-repeat center / cover;
+            }
+        }
+
+        /* Tablet Width */
+        @media (min-width: 768px) and (max-width: 992px) {
+            section {
+                background: url('img/circle-pattern.svg') repeat-x bottom/ 25px;
+            }
+        }
+
+        /* Desktop Width */
+        @media (min-width: 1200px) {
+            section {
+                background: url('img/circle-pattern.svg') repeat-y left center/ 25px;
+            }
+        }
+    </style>
+    <title>CSS Media Query</title>
+</head>
+
+<body>
+    
+    <section></section>
+
+</body>
+
+</html>

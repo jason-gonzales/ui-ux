@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/myHeart.png">
+    <link rel="stylesheet" href="style.css">
+    <title>SVG Transform</title>
+    <style>
+        .all-circles {
+            animation: rotate 1s ease 2s normal forwards;
+            transform-box: fill-box;
+            transform-origin: center;
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        svg circle {
+            stroke: #C6575F;
+            stroke-width: 5px;
+            fill: none;
+            transform-box: fill-box;
+        }
+
+        .circle-1 {
+            transform-origin: center;
+            animation: scale 2s ease normal forwards;
+        }
+
+        .circle-2 {
+            transform-origin: right;
+            animation: scale 2s ease normal forwards;
+        }
+
+        .circle-3 {
+            transform-origin: left;
+            animation: scale 2s ease normal forwards;
+        }
+
+        @keyframes scale {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg width="500px" height="500px">
+        <g class="all-circles">
+            <g transform="matrix(1,0,0,1,41,44)">
+                <circle class="circle-1" cx="207" cy="147" r="97" />
+            </g>
+            <g transform="matrix(1,0,0,1,138,141)">
+                <circle class="circle-2" cx="207" cy="147" r="97" />
+            </g>
+            <g transform="matrix(1,0,0,1,-56,141)">
+                <circle class="circle-3" cx="207" cy="147" r="97" />
+            </g>
+        </g>
+    </svg>
+
+
+</body>
+
+</html>

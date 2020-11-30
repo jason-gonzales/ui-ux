@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/myHeart.png">
+    <link rel="stylesheet" href="style.css">
+    <title>SVG Gradient</title>
+    <style>
+        svg {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg>
+        <g transform="matrix(1,0,0,1,10,-10)">
+            <circle class="circle-1" cx="240" cy="260" r="180" style="fill:url(#myRadial);" />
+        </g>
+        <defs>
+            <radialGradient id="myRadial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="matrix(114.448,-140,140,114.448,240,260)">
+                <stop offset="0" style="stop-color:#27fff5;stop-opacity:1" />
+                <stop offset="1" style="stop-color:#fff527;stop-opacity:1"  />
+            </radialGradient>
+        </defs>
+    </svg>
+    
+    <svg>
+        <g transform="matrix(1,0,0,1,10,-10)">
+            <circle cx="240" cy="260" r="180" style="fill:url(#myLinear);" />
+        </g>
+        <defs>
+            <linearGradient id="myLinear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
+                gradientTransform="matrix(226.913,-280.506,280.506,226.913,127.536,400.506)">
+                <stop offset="0" style="stop-color:#27fff5;stop-opacity:1" />
+                <stop offset="1" style="stop-color:#fff527;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+</body>
+
+</html>

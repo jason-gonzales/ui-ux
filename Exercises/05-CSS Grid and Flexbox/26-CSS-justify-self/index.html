@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <link rel="shortcut icon" type="image/png" href="img/myHeart.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            width: 1200px;
+            height: 500px;
+            display: grid;
+            grid: repeat(3, 1fr) / repeat(6, 1fr);
+            gap: 50px;
+        }
+
+        section:nth-of-type(1) {
+            grid-area: 2 / 2 / 3 / 5;
+            justify-self: center;
+            align-self: flex-start;
+        }
+
+        section:nth-of-type(2) {
+            grid-area: 1 / 5 / 4 / 7;
+            justify-self: flex-start;
+            align-self: center;
+        }
+
+        section:nth-of-type(3) {
+            grid-area: 1 / 1 / 2 / 5;
+            justify-self: flex-end;
+            align-self: flex-end;
+        }
+    </style>
+    <title>CSS Justify Self</title>
+</head>
+
+<body>
+    
+    <main>
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+    </main>
+
+</body>
+
+</html>

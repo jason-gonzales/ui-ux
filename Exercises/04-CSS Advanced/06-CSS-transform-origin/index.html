@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/myHeart.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            transform: rotateX(0);
+            transform-origin: top center;
+        }
+
+        section:hover {
+            transform: rotateX(180deg);
+        }
+
+        main {
+            transform: rotateY(0);
+            transform-origin: left center;
+        }
+
+        main:hover {
+            transform: rotateY(180deg);
+        }
+        
+        article {
+            transform-origin: top right;
+            transform: rotate(0);
+        }
+
+        article:hover {
+            transform: rotate(180deg);
+        }
+    </style>
+    <title>CSS Transform Origin</title>
+</head>
+<body>
+    <section></section>
+    <main></main>
+    <article></article>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/myHeart.png">
+    <link rel="stylesheet" href="style.css">
+    <title>SVG Line</title>
+    <style>
+        svg {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #000;
+            margin: 20px;
+        }
+
+        svg line {
+            stroke: #C6575F;
+            stroke-width: 2px;
+        }
+
+        .line-2 {
+            stroke-dasharray: 11px;
+            stroke-dashoffset: -9px;
+        }
+
+        .line-3 {
+            stroke-linecap: round;
+            stroke-width: 10px;
+        }
+
+        .line-4 {
+            stroke-linecap: butt;
+            stroke-opacity: 0.5;
+            stroke-width: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <svg >
+        <line x1="100" x2="0" y1="100" y2="0" />
+    </svg>
+
+    <svg>
+        <line class="line-2" x1="100" x2="0" y1="100" y2="0" />
+    </svg>
+
+    <svg>
+        <line class="line-3" x1="50" x2="10" y1="50" y2="10" />
+    </svg>
+
+    <svg>
+        <line class="line-4" x1="50" x2="10" y1="50" y2="10" />
+    </svg>
+
+
+</body>
+
+</html>

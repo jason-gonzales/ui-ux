@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/myHeart.png">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Append Prepend</title>
+</head>
+<body>
+    <section>
+        <h1>Heading 1</h1>
+        <h2>Sub Heading 1</h2>
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ul>
+    </section>
+    
+
+    <script>
+        const li = document.createElement('li');
+        const p = document.createElement('p');
+
+        const ul = document.querySelector('section ul');
+        li.textContent = 'List 4';
+        p.textContent = 'I am a paragraph';
+
+        ul.append(p)
+        ul.prepend(li)
+
+    </script>
+</body>
+</html>

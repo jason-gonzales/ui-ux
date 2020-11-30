@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+:root {
+    --primary: #49596F;
+    --shadow: #444B55;
+    --dark: #354050;
+    --highlight: #9FA6B2;
+    --light: #F2F2F2;
+    --accent: #C6575F;
+    --negative: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: var(--light) url('img/bg.svg');
+    background-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:link {
+    background-color: hsl(220, 100%, 70%);
+    transition: all 0.2s ease-out;
+}
+
+a:hover {
+    background-color: hsl(220, 80%, 60%);
+}
+
+.card {
+    width: 320px;
+    height: 415px;
+    box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.1);
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.2s ease;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.card-body h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: hsl(220, 40%, 40%);
+}
+
+.card-body h2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    color: hsl(220, 40%, 40%);
+    line-height: 23px;
+    word-spacing: 4px;
+}
+
+.card-body p {
+    font-size: 14px;
+    font-weight: 300;
+    color: hsl(220, 40%, 70%);
+    line-height: 23px;
+    word-spacing: 4px;
+}
+
+.card-button {
+    margin-top: auto;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+
+.explore {
+    display: flex;
+    padding: 12px 18px;
+    border-radius: 4px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.explore svg {
+    transform: translateX(0);
+    margin-left: 10px;
+    transition: all 0.2s ease;
+}
+
+.explore:hover svg {
+    transform: translateX(20px);
+}
+
+img {
+    display: inline-block;
+    transform: scale(0.75);
+}
+
+.my-color {
+    background-color: var(--accent);
+}

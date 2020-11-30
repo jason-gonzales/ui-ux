@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/myHeart.png">
+    <title>SVG Filter</title>
+    <style>
+        svg circle {
+            fill: #C6575F;
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg width="500px" height="500px">
+        <filter id="myBlur">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="20"/>
+        </filter>
+        <circle cx="250px" cy="250px" r="150px" filter="url(#myBlur)" />
+    </svg>
+
+    <svg width="500px" height="500px">
+        <filter id="myShadow">
+            <feDropShadow dx="5" dy="5" stdDeviation="10" flood-color="#000" flood-opacity="0.5"/>
+        </filter>
+        <circle cx="250px" cy="250px" r="150px" filter="url(#myShadow)" />
+    </svg>
+
+
+</body>
+
+</html>

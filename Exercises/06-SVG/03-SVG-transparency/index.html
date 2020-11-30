@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/myHeart.png">
+    <link rel="stylesheet" href="style.css">
+    <title>SVG Transparency</title>
+    <style>
+        .rectangle-1 {
+            fill: #C6575F;
+            stroke: #49596f;
+            stroke-width: 20px;
+            opacity: 0.5;
+        }
+
+        .rectangle-2 {
+            fill: #C6575F;
+            stroke: rgba(73, 89, 111, 0.5);
+            stroke-width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg width="500px" height="500px">
+        <rect class="rectangle-1" width="50px" height="150px" x="250px" y="250px"/>
+    </svg>
+
+    <svg width="500px" height="500px">
+        <rect class="rectangle-2" width="50px" height="150px" x="250px" y="250px" />
+    </svg>
+
+</body>
+
+</html>
