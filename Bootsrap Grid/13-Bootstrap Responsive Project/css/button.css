@@ -1,4 +1,4 @@
-button {
+ button {
     background: var(--accent);
     outline: none;
     border: none;
@@ -7,8 +7,8 @@ button {
     cursor: pointer;
     border-radius: var(--roundLG);
     font-weight: var(--bold);
-    transform: scale(1);
-    text-transform: lowercase;
+    /* transform: scale(1); */
+     text-transform: lowercase;
 }
 
 button:hover {
@@ -17,7 +17,7 @@ button:hover {
     color: var(--dark);
 }
 
-@media (max-width: 576px) {
+ @media (max-width: 576px) {
     button {
         width: 100%;
     }
