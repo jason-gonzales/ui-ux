@@ -3,8 +3,8 @@ a:visited {
     color: var(--dark);
     padding: var(--spaceXS) var(--spaceMD);
     text-decoration: none;
-    border-radius: var(--roundLG);
-    background-color: var(--light);
+    border-radius: var(--roundXL);
+    /* background-color: var(--light); */
     text-align: left;
     transform: scale(1);
     text-transform: lowercase;
@@ -12,7 +12,7 @@ a:visited {
 
 a:hover,
 a:active {
-    transform: scale(1.1);
+    transform: scale(1.5);
     color: var(--negative);
     background-color: var(--primaryHover);
     text-align: center;
